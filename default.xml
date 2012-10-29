@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch="git://github.com/android/" />
+           fetch="git://android.git.kernel.org/" />
   <default revision="froyo"
            remote="aosp"
            sync-j="4" />
