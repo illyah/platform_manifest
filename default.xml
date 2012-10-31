@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="aosp"
-           fetch="https://android.googlesource.com/" />
+  <remote name="aosp"
+          fetch="https://android.googlesource.com/" />
+  <remote name="github" 
+          fetch=".." />
+
   <default revision="froyo"
-           remote="aosp"
-           sync-j="4" />
+          remote="aosp" />
 
   <project path="build" name="platform/build">
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -29,7 +31,7 @@
   <project path="device/htc/passion-common" name="device/htc/passion-common" />
   <project path="device/htc/sapphire" name="device/htc/sapphire" />
   <project path="device/sample" name="device/sample" />
-  <project path="device/samsung/volans" name="illyah/android_device_samsung_volans" />
+  <project path="device/samsung/volans" name="illyah/android_device_samsung_volans" remote="github" />
 
   <project path="external/apache-http" name="platform/external/apache-http" />
   <project path="external/astl" name="platform/external/astl" />
